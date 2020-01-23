@@ -118,6 +118,13 @@ ul.form-list textarea:focus {
   box-shadow: none;
 }
 
+.mdl-button--colored[disabled][disabled]:hover,
+.mdl-button--colored.mdl-button--disabled.mdl-button--disabled:hover {
+  color: rgba(0,0,0,.26) ;
+  background-color: rgba(0,0,0,.12);
+  border-color: #084884;
+}
+
 .co-info-topbox {
   color: white;
   background: #084884;
