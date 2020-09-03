@@ -17,6 +17,7 @@ h1 {
   margin: 20px 0;
 }
 
+body.logged-out .mdl-layout--fixed-drawer > .mdl-layout__header .mdl-layout__header-row,
 .mdl-layout--fixed-drawer > .mdl-layout__header .mdl-layout__header-row {
   text-align: center;
   padding: 0;
@@ -49,6 +50,8 @@ ul.form-list li:nth-child(even) {
 }
 
 ul.form-list textarea,
+ul.form-list input[type="number"],
+ul.form-list input[type="password"],
 ul.form-list input[type="text"] {
   display: block;
   width: 100%;
@@ -137,6 +140,7 @@ ul.form-list textarea:focus {
 
 .co-info-topbox a:hover {
   color: white;
+  font-weight: bold;
   opacity: 0.8;
 }
 
@@ -261,10 +265,13 @@ html .ui-button.ui-state-disabled:active {
     position: static;
   }
 }
-#user-menu a.topMenu {
+#user-menu a.topMenu,
+#user-menu #global-search {
   color: #222;
 }
-
+body.logged-in #user-menu {
+  position: relative;
+}
 .corner-ribbon {
   width: 200px;
   background: #e43;
@@ -347,6 +354,14 @@ footer {
 }
 #main {
   margin-left: 20px !important;
+}
+
+.pages .ui-icon {
+  background-image: url("/registry/js/jquery/jquery-ui-1.11.4.custom/images-comanage/ui-icons_ffffff_256x240.png");
+}
+
+#redirect-box {
+  position: unset;
 }
 
 footer {
